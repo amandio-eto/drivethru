@@ -1,6 +1,6 @@
 <script type="text/javascript">
 	function konfirmasi_hapus() {
-		tanya = confirm("Confirmação Ita Boot hakarak Elemina Dados refere ?");
+		tanya = confirm("Se os dados serão excluídos?");
 		if (tanya == true) return true;
 		else return false;
 	}
