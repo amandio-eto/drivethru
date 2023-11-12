@@ -19,7 +19,7 @@
 		<!-- PAGE CONTENT BEGINS -->
 		<div class="row">
 			<div></div>
-			<h4>Benvindo Mai CHICKETO
+			<h4>Benvindo 
 				<?php echo ucwords($_SESSION['user']) ?>,
 			</h4>
 		</div><!-- /.row -->
