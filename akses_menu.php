@@ -13,9 +13,9 @@ require_once './Controller/ControllerAcessMenu.php';
 
 <div class="breadcrumbs" id="breadcrumbs">
     <script type="text/javascript">
-    try {
-        ace.settings.check('breadcrumbs', 'fixed')
-    } catch (e) {}
+        try {
+            ace.settings.check('breadcrumbs', 'fixed')
+        } catch (e) { }
     </script>
 
     <ul class="breadcrumb">
@@ -44,37 +44,37 @@ require_once './Controller/ControllerAcessMenu.php';
                     <tr>
                         <th class="text-center" width="80px">No</th>
                         <th class="">Nome</th>
-                        <th width="60px" class="text-center">Access</th>
+                        <th width="60px" class="text-center">Accesso</th>
                     </tr>
                     <?php
-					$q = mysqli_query($conn, "select menu,nama,akses,m.id as idmenu from hak_akses h 
+                    $q = mysqli_query($conn, "select menu,nama,akses,m.id as idmenu from hak_akses h 
 						                         left outer join menu m on (h.menu=m.kode) where user='$userid'
 						                         union  
 												 select kode as menu,nama,'N',id as idmenu from menu 
 												 where kode not in (select menu from hak_akses where user='$userid') order by idmenu");
-					if (mysqli_num_rows($q) > 0) {
-						$i = 0;
-						while ($row = mysqli_fetch_array($q)) {
-							extract($row);
-							$i++;
-							if ($akses == 'Y')
-								$ck = "checked";
-							else
-								$ck = "";
-							?>
-                    <tr>
-                        <td>
-                            <?php echo $i ?>
-                        </td>
-                        <td>
-                            <?php echo $nama ?>
-                        </td>
-                        <td class="text-center"><input type="hidden" name="menu<?php echo $i ?>"
-                                value="<?php echo $menu ?>"><input type="checkbox" name="akses<?php echo $i ?>"
-                                value="Y" <?php echo $ck ?>></td>
-                    </tr>
-                    <?php }
-					} ?>
+                    if (mysqli_num_rows($q) > 0) {
+                        $i = 0;
+                        while ($row = mysqli_fetch_array($q)) {
+                            extract($row);
+                            $i++;
+                            if ($akses == 'Y')
+                                $ck = "checked";
+                            else
+                                $ck = "";
+                            ?>
+                            <tr>
+                                <td>
+                                    <?php echo $i ?>
+                                </td>
+                                <td>
+                                    <?php echo $nama ?>
+                                </td>
+                                <td class="text-center"><input type="hidden" name="menu<?php echo $i ?>"
+                                        value="<?php echo $menu ?>"><input type="checkbox" name="akses<?php echo $i ?>"
+                                        value="Y" <?php echo $ck ?>></td>
+                            </tr>
+                        <?php }
+                    } ?>
                     <input type="hidden" name="jml_menu" value="<?php echo $i ?>">
                 </table>
                 <hr>
