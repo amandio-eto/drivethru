@@ -19,7 +19,7 @@
 			<li>
 				<a href="index.php?menu=voucher">Voucher</a>
 			</li>
-			<li class="active">Edit Voucher</li>
+			<li class="active">Editar Voucher</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -29,13 +29,13 @@
 				<form class="form-horizontal" role="form" action='voucher_act.php?jns=edit' method='post'  name='form1' id='form1' onsubmit='return validasi();' enctype="multipart/form-data">
 					<input type="hidden" name="id" id="id"  value="<?php echo $id?>">
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Kode Voucher</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Código do Voucher</label>
 						<div class="col-sm-5">
 							<input type="text" name="kode" id="kode"  value="<?php echo $kode?>" maxlength="50" class="form-control" style="text-transform:uppercase" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Discount</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Desconto</label>
 						<div class="col-sm-2">
 							<div class="input-group">
 							  <input type="text" name="disc" id="disc"  value="<?php echo FormatAngka($disc)?>" maxlength="5" class="form-control" autocomplete="off"/>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Discount Nilai</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Valor de Desconto</label>
 						<div class="col-sm-2">
 							<div class="input-group">
 								<span class="input-group-addon" id="basic-addon1"> $ </span>
@@ -59,7 +59,7 @@
 						</div>
 					</div>
 				    <div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Aktif </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Ativo </label>
 						<?php 
 							if ($aktif=='Y'){
 								$ck1="selected";
@@ -72,16 +72,16 @@
 						
 						<div class="col-sm-2">
 							<select name="aktif" id="aktif">
-							    <option value="Y" <?php echo $ck1?>>Ya</option>
-								<option value="N" <?php echo $ck2?>>Tidak</option>
+							    <option value="Y" <?php echo $ck1?>>Sim</option>
+								<option value="N" <?php echo $ck2?>>Não</option>
 							</select>
 						</div>
 					</div>
 					<hr>
 					<div class="form-group">
 						<div class="col-sm-6">
-							<input type="submit" value="Simpan" class="btn btn-primary">&nbsp;
-							<a type="button" class="btn btn-danger" href="?menu=voucher">Batal</a>
+							<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+							<a type="button" class="btn btn-danger" href="?menu=voucher">Cancela</a>
 						</div>
 					</div>
 				</form>
