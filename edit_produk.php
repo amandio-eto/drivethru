@@ -17,9 +17,9 @@
 				<a href="index.php">Home</a>
 			</li>
 			<li>
-				<a href="index.php?menu=produk">Produk</a>
+				<a href="index.php?menu=produk">Produto</a>
 			</li>
-			<li class="active">Edit Produk</li>
+			<li class="active">Editar Produto</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -29,13 +29,13 @@
 				<form class="form-horizontal" role="form" action='produk_act.php?jns=edit' method='post'  name='form1' id='form1' onsubmit='return validasi();' enctype="multipart/form-data">
 					<input type="hidden" name="id" id="id"  value="<?php echo $id?>">
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Nama Produk</label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Nome de Produto</label>
 						<div class="col-sm-5">
 							<input type="text" name="nama" id="nama"  value="<?php echo $nama?>" maxlength="50" class="form-control" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Kategori</label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1">Categoria</label>
 						<div class="col-sm-5">
 							<select name="kategori" id="kategori" class="form-control chosen-select"  style="width:300px"; data-placeholder="- Pilih Kategori -" required>
 							<option value="" selected></option>
@@ -55,13 +55,13 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Harga </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Preço</label>
 						<div class="col-sm-3">
 							<input type="text" name="harga" id="harga"  value="<?php echo FormatAngka($harga)?>" maxlength="50" class="form-control" autocomplete="off" required />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Gambar </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Imagem </label>
 						<div class="col-sm-7">
 							<div class="text-left">
 								   <?php 
@@ -69,7 +69,7 @@
 									   else $gbr="img/food_no_image.png";
 									?>   
 								   <img id='img-upload' src="<?php  echo $gbr ?>" width="300px"/>
-								   <div style="font-size:11px;margin-bottom:10px">Format Gambar JPG (800 x 500)</div>
+								   <div style="font-size:11px;margin-bottom:10px">Formato de Imagem JPG (800 x 500)</div>
 								</div>	
 								<div class="input-group">
 									<span class="input-group-btn">
@@ -94,7 +94,7 @@
 						</div>
 					</div>
 				    <div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Aktif </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativu </label>
 						<?php 
 							if ($aktif=='Y'){
 								$ck1="selected";
@@ -106,8 +106,8 @@
 						?>
 						<div class="col-sm-2">
 							<select name="aktif" id="aktif">
-							    <option value="Y" <?php echo $ck1?>>Ya</option>
-								<option value="N" <?php echo $ck2?>>Tidak</option>
+							    <option value="Y" <?php echo $ck1?>>Sim</option>
+								<option value="N" <?php echo $ck2?>>Não</option>
 							</select>
 						</div>
 					</div>
@@ -117,8 +117,8 @@
                 </div>	
 				<div class="col-md-12">					
 					<hr>
-					<input type="submit" value="Simpan" class="btn btn-primary">&nbsp;
-					<a type="button" class="btn btn-danger" href="?menu=produk">Batal</a>
+					<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+					<a type="button" class="btn btn-danger" href="?menu=produk">Cancelado</a>
 				</div>
 				</form>
 			</div>		

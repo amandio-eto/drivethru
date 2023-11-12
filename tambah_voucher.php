@@ -15,7 +15,7 @@
 			<li>
 				<a href="index.php?menu=voucher">Voucher</a>
 			</li>
-			<li class="active">Tambah Voucher</li>
+			<li class="active">Adiciona voucher</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -24,13 +24,13 @@
 			<div class="col-xs-12">
 				<form class="form-horizontal" role="form" action='voucher_act.php?jns=baru' method='post'  name='form1' id='form1' onsubmit='' enctype="multipart/form-data">
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Kode Voucher</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1">Código do voucher</label>
 						<div class="col-sm-3">
 							<input type="text" name="kode" id="kode"  value="" maxlength="20" style="text-transform:uppercase" class="form-control" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Discount</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Discounto</label>
 						<div class="col-sm-2">
 							<div class="input-group">
 							  <input type="text" name="disc" id="disc"  value="" maxlength="5" class="form-control" autocomplete="off"/>
@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Discount Nilai</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Valor de Desconto </label>
 						<div class="col-sm-2">
 							<div class="input-group">
 								<span class="input-group-addon" id="basic-addon1"> $ </span>
@@ -56,8 +56,8 @@
 					<hr>
 					<div class="form-group">
 						<div class="col-sm-6">
-							<input type="submit" value="Simpan" class="btn btn-primary">&nbsp;
-							<a type="button" class="btn btn-danger" href="?menu=voucher">Batal</a>
+							<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+							<a type="button" class="btn btn-danger" href="?menu=voucher">Cancela</a>
 						</div>
 					</div>
 				</form>
