@@ -32,7 +32,7 @@
 					<div class="form-group">
 						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Categoria</label>
 						<div class="col-sm-5">
-							<select name="kategori" id="kategori" class="form-control chosen-select"  style="width:300px"; data-placeholder="- Pilih Kategori -" required>
+							<select name="kategori" id="kategori" class="form-control chosen-select"  style="width:300px"; data-placeholder="- Escolha a Categoria -" required>
 							<option value="" selected></option>
 								<?php 
 								$q = mysqli_query($conn,"select id,nama from kategori where aktif='Y' order by nama");
