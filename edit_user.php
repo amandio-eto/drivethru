@@ -55,14 +55,14 @@ function validasi() {
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Senha </label>
+                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Password </label>
                     <div class="col-sm-5">
                         <input type="password" name="password" id="password1" maxlength="20" value=""
                             class="form-control" autofocus />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1-1">Confirmação Senha
+                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1-1">Password Confirmação
                     </label>
                     <div class="col-sm-5">
                         <input type="password" id="password2" maxlength="20" value="" class="form-control" />
@@ -73,6 +73,7 @@ function validasi() {
                     <div class="col-sm-6">
                         <input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
                         <a type="button" class="btn btn-danger" href="?menu=user">Cancela</a>
+
                     </div>
                 </div>
             </form>
