@@ -3,8 +3,8 @@
  * Database config variables
  */
 define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASSWORD", "");
+define("DB_USER", "userdrivethru");
+define("DB_PASSWORD", "db53guR03t0#@!");
 define("DB_DATABASE", "drivethru");
  
 
