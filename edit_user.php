@@ -72,7 +72,7 @@ function validasi() {
                 <div class="form-group">
                     <div class="col-sm-6">
                         <input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
-                        <a type="button" class="btn btn-danger" href="?menu=user">Cancelado</a>
+                        <a type="button" class="btn btn-danger" href="?menu=user">Cancela</a>
                     </div>
                 </div>
             </form>

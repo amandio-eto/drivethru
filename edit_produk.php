@@ -94,7 +94,7 @@
 						</div>
 					</div>
 				    <div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativu </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativo </label>
 						<?php 
 							if ($aktif=='Y'){
 								$ck1="selected";
@@ -118,7 +118,7 @@
 				<div class="col-md-12">					
 					<hr>
 					<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
-					<a type="button" class="btn btn-danger" href="?menu=produk">Cancelado</a>
+					<a type="button" class="btn btn-danger" href="?menu=produk">Cancela</a>
 				</div>
 				</form>
 			</div>		
