@@ -97,7 +97,7 @@
 					<div class="form-group">
 						<div class="col-sm-6">
 							<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
-							<a type="button" class="btn btn-danger" href="?menu=kategori">Cancelado</a>
+							<a type="button" class="btn btn-danger" href="?menu=kategori">Cancela</a>
 						</div>
 					</div>
 				</form>

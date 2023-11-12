@@ -1,7 +1,7 @@
 <script type="text/javascript">
 	function konfirmasi_hapus()
    {
-	   tanya = confirm("Apakah data akan dihapus ?");
+	   tanya = confirm("Se os dados serão excluídos?");
 	   if (tanya == true) return true;
 	   else return false;
    }

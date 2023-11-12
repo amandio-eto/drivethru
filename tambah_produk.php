@@ -13,9 +13,9 @@
 				<a href="index.php">Home</a>
 			</li>
 			<li>
-				<a href="index.php?menu=produk">Produk</a>
+				<a href="index.php?menu=produk">Produto</a>
 			</li>
-			<li class="active">Tambah Produk</li>
+			<li class="active">Adicionar o Produto</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -24,15 +24,15 @@
 			<div class="col-xs-12">
 				<form class="form-horizontal" role="form" action='produk_act.php?jns=baru' method='post'  name='form1' id='form1' onsubmit='' enctype="multipart/form-data">
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Nama Produk</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Nome do Produto</label>
 						<div class="col-sm-7">
 							<input type="text" name="nama" id="nama"  value="" maxlength="50" class="form-control" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Kategori</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Categoria</label>
 						<div class="col-sm-5">
-							<select name="kategori" id="kategori" class="form-control chosen-select"  style="width:300px"; data-placeholder="- Pilih Kategori -" required>
+							<select name="kategori" id="kategori" class="form-control chosen-select"  style="width:300px"; data-placeholder="- Escolha a Categoria -" required>
 							<option value="" selected></option>
 								<?php 
 								$q = mysqli_query($conn,"select id,nama from kategori where aktif='Y' order by nama");
@@ -50,20 +50,20 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Harga </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Preço </label>
 						<div class="col-sm-3">
 							<input type="text" name="harga" id="harga"  value="" maxlength="50" class="form-control" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Gambar </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Imagem </label>
 						<div class="col-sm-7">
 							<div class="text-left">
 							   <?php 
 								   $gbr="img/food_no_image.png";
 								?>   
 							   <img id='img-upload' src="<?php  echo $gbr ?>" width="200px"/>
-							   <div style="font-size:11px;margin-bottom:10px">Format Gambar</div>
+							   <div style="font-size:11px;margin-bottom:10px">Formatu de Imagem</div>
 							</div>	
 							<div class="input-group">
 								<span class="input-group-btn">
@@ -90,8 +90,8 @@
 					<hr>
 					<div class="form-group">
 						<div class="col-sm-6">
-							<input type="submit" value="Simpan" class="btn btn-primary">&nbsp;
-							<a type="button" class="btn btn-danger" href="?menu=produk">Batal</a>
+							<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+							<a type="button" class="btn btn-danger" href="?menu=produk">Cancela</a>
 						</div>
 					</div>
 				</form>
