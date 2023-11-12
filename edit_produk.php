@@ -107,35 +107,37 @@
                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativu </label>
                     <?php 
 =======
-									?>   
-								   <img id='img-upload' src="<?php  echo $gbr ?>" width="300px"/>
-								   <div style="font-size:11px;margin-bottom:10px">Formato de Imagem JPG (800 x 500)</div>
-								</div>	
-								<div class="input-group">
-									<span class="input-group-btn">
-										<span class="btn btn-default btn-file" style="border:2px">
-											Browse… <input type="file" id="imgInp" name="photo" accept="image/jpeg" >
-										</span>
-									</span>
-									<input type="text" class="form-control" readonly>
-								</div>				
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> SKU </label>
-						<div class="col-sm-3">
-							<input type="text" name="sku" id="sku"  value="<?php echo $sku?>" maxlength="30" class="form-control" autocomplete="off" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Barcode </label>
-						<div class="col-sm-4">
-							<input type="text" name="barcode" id="barcode"  value="<?php echo $barcode?>" maxlength="50" class="form-control" autocomplete="off" onchange="makeCode()"/>
-						</div>
-					</div>
-				    <div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativo </label>
-						<?php 
+									?>
+                    <img id='img-upload' src="<?php  echo $gbr ?>" width="300px" />
+                    <div style="font-size:11px;margin-bottom:10px">Formato de Imagem JPG (800 x 500)</div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file" style="border:2px">
+                            Browse… <input type="file" id="imgInp" name="photo" accept="image/jpeg">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> SKU </label>
+        <div class="col-sm-3">
+            <input type="text" name="sku" id="sku" value="<?php echo $sku?>" maxlength="30" class="form-control"
+                autocomplete="off" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Barcode </label>
+        <div class="col-sm-4">
+            <input type="text" name="barcode" id="barcode" value="<?php echo $barcode?>" maxlength="50"
+                class="form-control" autocomplete="off" onchange="makeCode()" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ativo </label>
+        <?php 
 >>>>>>> 2635254b04553e898ac3f2139fe9f5f4121cb7b1
 							if ($aktif=='Y'){
 								$ck1="selected";
@@ -145,25 +147,24 @@
 								$ck2="selected";
 						    }
 						?>
-<<<<<<< HEAD
-                    <div class="col-sm-2">
-                        <select name="aktif" id="aktif">
-                            <option value="Y" <?php echo $ck1?>>Sim</option>
-                            <option value="N" <?php echo $ck2?>>Não</option>
-                        </select>
-                    </div>
-                </div>
-        </div>
-        <div class="col-md-3">
-            <div id="qrcode" style="margin-top:10px;padding:10px;border:4px solid #444;width:fit-content"></div>
-        </div>
-        <div class="col-md-12">
-            <hr>
-            <input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
-            <a type="button" class="btn btn-danger" href="?menu=produk">Cancelado</a>
-        </div>
-        </form>
+        <<<<<<< HEAD <div class="col-sm-2">
+            <select name="aktif" id="aktif">
+                <option value="Y" <?php echo $ck1?>>Sim</option>
+                <option value="N" <?php echo $ck2?>>Não</option>
+            </select>
     </div>
+</div>
+</div>
+<div class="col-md-3">
+    <div id="qrcode" style="margin-top:10px;padding:10px;border:4px solid #444;width:fit-content"></div>
+</div>
+<div class="col-md-12">
+    <hr>
+    <input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+    <a type="button" class="btn btn-danger" href="?menu=produk">Cancelado</a>
+</div>
+</form>
+</div>
 </div><!-- /.row -->
 </div><!-- /.page-content -->
 <script>
@@ -208,41 +209,59 @@ $(document).ready(function() {
 var qrcode = new QRCode(document.getElementById("qrcode"), {
     width: 200,
     height: 200
-});
-=======
-						<div class="col-sm-2">
-							<select name="aktif" id="aktif">
-							    <option value="Y" <?php echo $ck1?>>Sim</option>
-								<option value="N" <?php echo $ck2?>>Não</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">				
-					<div id="qrcode" style="margin-top:10px;padding:10px;border:4px solid #444;width:fit-content"></div>
-                </div>	
-				<div class="col-md-12">					
-					<hr>
-					<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
-					<a type="button" class="btn btn-danger" href="?menu=produk">Cancela</a>
-				</div>
-				</form>
-			</div>		
-		</div><!-- /.row -->
-	</div><!-- /.page-content -->
-    <script>
-	$(document).ready( function() {
-    	$(document).on('change', '.btn-file :file', function() {
-		var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [label]);
-		});
->>>>>>> 2635254b04553e898ac3f2139fe9f5f4121cb7b1
+}); ===
+===
+= <
+div class = "col-sm-2" >
+    <
+    select name = "aktif"
+id = "aktif" >
+    <
+    option value = "Y"
+<?php echo $ck1?> > Sim < /option> <
+option value = "N"
+<?php echo $ck2?> > Não < /option> < /
+select > <
+    /div> < /
+div > <
+    /div> <
+div class = "col-md-3" >
+    <
+    div id = "qrcode"
+style = "margin-top:10px;padding:10px;border:4px solid #444;width:fit-content" > < /div> < /
+div > <
+    div class = "col-md-12" >
+    <
+    hr >
+    <
+    input type = "submit"
+value = "Guarda"
+class = "btn btn-primary" > & nbsp; <
+a type = "button"
+class = "btn btn-danger"
+href = "?menu=produk" > Cancela < /a> < /
+div > <
+    /form> < /
+div > <
+    /div><!-- /.row-- >
+    <
+    /div><!-- /.page - content-- >
+    <
+    script >
+    $(document).ready(function() {
+            $(document).on('change', '.btn-file :file', function() {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+            }); >>>
+            >>>
+            >
+            2635254 b04553e898ac3f2139fe9f5f4121cb7b1
 
-function makeCode() {
-    var barcode = document.getElementById("barcode").value;
-    qrcode.makeCode(barcode);
-}
+            function makeCode() {
+                var barcode = document.getElementById("barcode").value;
+                qrcode.makeCode(barcode);
+            }
 
-makeCode();
+            makeCode();
 </script>
