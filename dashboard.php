@@ -17,7 +17,7 @@
 			<!-- PAGE CONTENT BEGINS -->
 			<div class="row">
 				<div></div>
-                   <h4>Selamat Datang <?php echo ucwords($_SESSION['user'])?>, </h4> 
+                   <h4>Bemvindu <?php echo ucwords($_SESSION['user'])?>, </h4> 
 			</div><!-- /.row -->
 			<?php  
 			    $tgl=date('Y-m-d');
@@ -78,7 +78,7 @@
 
 					<div class="infobox-data">
 						<span class="infobox-data-number">$ <?php echo FormatAngka($jual)?></span>
-						<div class="infobox-content">Total Penjualan</div>
+						<div class="infobox-content">Total Vendas</div>
 					</div>
 				</div>
 				
@@ -88,7 +88,7 @@
 					</div>
 					<div class="infobox-data">
 						<span class="infobox-data-number">$ <?php echo FormatAngka($jual_cash)?></span>
-						<div class="infobox-content">Penjualan Cash</div>
+						<div class="infobox-content">Vendas Cash</div>
 					</div>
 				</div>
 				
@@ -98,7 +98,7 @@
 					</div>
 					<div class="infobox-data">
 						<span class="infobox-data-number">$ <?php echo FormatAngka($jual_debit)?></span>
-						<div class="infobox-content">Penjualan Debit</div>
+						<div class="infobox-content">Vendas de Débito</div>
 					</div>
 				</div>
 				
@@ -108,7 +108,7 @@
 					</div>
 					<div class="infobox-data">
 						<span class="infobox-data-number">$ <?php echo FormatAngka($batal)?></span>
-						<div class="infobox-content">Penjualan Batal</div>
+						<div class="infobox-content">Vendas Cancelada</div>
 					</div>
 				</div>
 				
@@ -118,14 +118,14 @@
 					</div>
 					<div class="infobox-data">
 						<span class="infobox-data-number"> <?php echo FormatAngka($jml_produk)?></span>
-						<div class="infobox-content">Produk Terjual</div>
+						<div class="infobox-content">Produto Vendido</div>
 					</div>
 				</div>
 			</div>
 			<div class="row" style="margin-top:10px">
 				<div class="col-md-6">
 					<div style="border:1px solid #ddd">
-						<div style="padding:6px 12px;font-weight:700">Produk Terjual</div>
+						<div style="padding:6px 12px;font-weight:700">Produto vendido</div>
 						<div class="widget-body">
 							<div class="widget-main">
 								<div id="piechart-placeholder"></div>
@@ -135,7 +135,7 @@
 				</div>		
 				<div class="col-md-6">
 					<div style="border:1px solid #ddd">
-						<div style="padding:6px 12px;font-weight:700">Penjualan Bulan Ini</div>
+						<div style="padding:6px 12px;font-weight:700">Vendas este mês</div>
 						<div class="widget-body">
 							<div class="widget-main padding-4">
 								<div id="sales-charts"></div>
@@ -257,7 +257,7 @@
 			
 				var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'240px'});
 				$.plot("#sales-charts", [
-					{ label: "Total Penjualan ($)", data: d1 }
+					{ label: "Total Vendas ($)", data: d1 }
 				], {
 					hoverable: true,
 					shadowSize: 0,

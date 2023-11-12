@@ -17,7 +17,7 @@
 				<i class="ace-icon fa fa-home home-icon"></i>
 				<a href="index.php">Home</a>
 			</li>
-			<li class="active">Kategori</li>
+			<li class="active">Categoria</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -28,7 +28,7 @@
 				<div style="margin-bottom:10px">	
 					<a class="btn btn-primary btn-sm" href="?menu=tambah_kategori">
 						<i class="glyphicon glyphicon-plus icon-white"></i>
-						Tambah Kategori
+						Adicionar categoria
 					</a>
 				</div>	
 				<div class="table-responsive">
@@ -36,11 +36,11 @@
 				<thead>
 					<tr>
 						<th class="text-right" width="80px">No</th>
-						<th class="text-center">Nama Kategori</th>
-						<th class="text-center" width="100px">Gambar</th>
-						<th class="text-center" width="150px">Proses di Dapur</th>
-						<th class="text-center" width="120px">Aktif</th>
-						<th>Aksi</th>
+						<th class="text-center">Nome de categoria</th>
+						<th class="text-center" width="100px">Imagen</th>
+						<th class="text-center" width="150px">Processo na Cozinha</th>
+						<th class="text-center" width="120px">Ativo</th>
+						<th>Ação</th>
 					</tr>
 				</thead>
 				<tbody>

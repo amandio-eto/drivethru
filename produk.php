@@ -17,7 +17,7 @@
 				<i class="ace-icon fa fa-home home-icon"></i>
 				<a href="index.php">Home</a>
 			</li>
-			<li class="active">Produk</li>
+			<li class="active">Produto</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -28,7 +28,7 @@
 				<div style="margin-bottom:10px">	
 					<a class="btn btn-primary btn-sm" href="?menu=tambah_produk">
 						<i class="glyphicon glyphicon-plus icon-white"></i>
-						Tambah Produk
+						Adicionar produto
 					</a>
 				</div>	
 				<div class="table-responsive">
@@ -36,14 +36,14 @@
 				<thead>
 					<tr>
 						<th class="text-right" width="80px">No</th>
-						<th class="text-center" width="100px">Gambar</th>
-						<th class="text-center">Nama Produk</th>
-						<th class="text-center">Kategori</th>
+						<th class="text-center" width="100px">Imagen</th>
+						<th class="text-center">Nome do Produto</th>
+						<th class="text-center">Categoria</th>
 						<th class="text-center">SKU</th>
 						<th class="text-center">Barcode</th>
-						<th class="text-center" width="150px">Harga</th>
-						<th class="text-center" width="100px">Aktif</th>
-						<th width="120px">Aksi</th>
+						<th class="text-center" width="150px">Preço</th>
+						<th class="text-center" width="100px">Ativo</th>
+						<th width="120px">Ação</th>
 					</tr>
 				</thead>
 				<tbody>
