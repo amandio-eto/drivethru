@@ -4,8 +4,8 @@
  */
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
-define("DB_PASSWORD", "passwordU$1");
-define("DB_DATABASE", "debugdb");
+define("DB_PASSWORD", "");
+define("DB_DATABASE", "drivethru");
  
 
 //membuat koneksi dengan database
