@@ -74,11 +74,11 @@
 									</td>
 									<td>
 										<a class="btn btn-primary btn-xs" href="?menu=edit_user&id=<?php echo $id; ?>"
-											title="Edit">
+											title="Editar">
 											&nbsp;<i class="glyphicon glyphicon-pencil icon-white"></i>&nbsp;</a>
 
 										&nbsp;<a class="btn btn-info btn-xs" href="?menu=akses_menu&id=<?php echo $id; ?>"
-											title="Hak Akses">
+											title="Direito de acesso">
 											&nbsp;<i class="fa fa-key icon-white"></i>&nbsp;</a>
 
 										&nbsp;<a class="btn btn-danger btn-xs"

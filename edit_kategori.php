@@ -17,9 +17,9 @@
 				<a href="index.php">Home</a>
 			</li>
 			<li>
-				<a href="index.php?menu=kategori">Kategori</a>
+				<a href="index.php?menu=kategori">Categoria</a>
 			</li>
-			<li class="active">Edit Kategori</li>
+			<li class="active">Editar a Categoria</li>
 		</ul><!-- /.breadcrumb -->
 	</div>
 
@@ -29,13 +29,13 @@
 				<form class="form-horizontal" role="form" action='kategori_act.php?jns=edit' method='post'  name='form1' id='form1' onsubmit='return validasi();' enctype="multipart/form-data">
 					<input type="hidden" name="id" id="id"  value="<?php echo $id?>">
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Nama Kategori</label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Nome de Categoria</label>
 						<div class="col-sm-5">
 							<input type="text" name="nama" id="nama"  value="<?php echo $nama?>" maxlength="50" class="form-control" autocomplete="off" required autofocus />
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Gambar </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Imagem </label>
 						<div class="col-sm-7">
 							<div class="text-left">
 							   <?php 
@@ -43,7 +43,7 @@
 								   else $gbr="img/food_no_image.png";
 								?>   
 							   <img id='img-upload' src="<?php  echo $gbr ?>" width="300px"/>
-							   <div style="font-size:11px;margin-bottom:10px">Format Gambar JPG (800 x 500)</div>
+							   <div style="font-size:11px;margin-bottom:10px">Formato de Imagem JPG (800 x 500)</div>
 							</div>	
 							<div class="input-group">
 								<span class="input-group-btn">
@@ -56,7 +56,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Proses di Dapur </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Processo na Cozinha </label>
 						<?php 
 							if ($proses_dapur=='Y'){
 								$ck1="selected";
@@ -69,13 +69,13 @@
 						
 						<div class="col-sm-2">
 							<select name="proses_dapur" id="aktif">
-							    <option value="Y" <?php echo $ck1?>>Ya</option>
-								<option value="N" <?php echo $ck2?>>Tidak</option>
+							    <option value="Y" <?php echo $ck1?>>Sim</option>
+								<option value="N" <?php echo $ck2?>>Não</option>
 							</select>
 						</div>
 					</div>
 				    <div class="form-group">
-						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Aktif </label>
+						<label class="col-sm-2 control-label no-padding-right" for="form-field-1-1"> Ativo </label>
 						<?php 
 							if ($aktif=='Y'){
 								$ck1="selected";
@@ -88,16 +88,16 @@
 						
 						<div class="col-sm-2">
 							<select name="aktif" id="aktif">
-							    <option value="Y" <?php echo $ck1?>>Ya</option>
-								<option value="N" <?php echo $ck2?>>Tidak</option>
+							    <option value="Y" <?php echo $ck1?>>Sim</option>
+								<option value="N" <?php echo $ck2?>>Não</option>
 							</select>
 						</div>
 					</div>
 					<hr>
 					<div class="form-group">
 						<div class="col-sm-6">
-							<input type="submit" value="Simpan" class="btn btn-primary">&nbsp;
-							<a type="button" class="btn btn-danger" href="?menu=kategori">Batal</a>
+							<input type="submit" value="Guarda" class="btn btn-primary">&nbsp;
+							<a type="button" class="btn btn-danger" href="?menu=kategori">Cancelado</a>
 						</div>
 					</div>
 				</form>
