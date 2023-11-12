@@ -1,0 +1,42 @@
+
+
+
+
+
+@startuml
+
+
+
+actor "Users"
+
+
+node "System"
+
+package "Model"
+
+database "MYSQL"
+
+
+Users-[#red]-> System
+
+System-[#red]->Model
+Model-[#red]->MYSQL
+
+
+MYSQL-[#blue]->Model
+Model-[#blue]->System
+System-[#blue]->Users
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
